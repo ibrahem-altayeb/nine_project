@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;500;700;800&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+  --Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+--color: hsl(228, 45%, 44%); 
+}
+body{
+  font-family: 'Karla', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background-color: var(--Light-Gray);
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.card {
+  max-width: 636px;
+}
+.card .box{
+  background-color: white;
+  padding: 42px 80px 42px 42px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card .box h1{
+  color: var(--Cyan);
+  font-size: 28px;
+  font-weight: bold ;
+}
+.card .box h2{
+  margin-top: 25px ;
+  color: var(--Bright-Yellow);
+  font-size: 21px;
+}
+.card .box p{
+  font-size: 15px;
+  color: var(--Grayish-Blue);
+  margin-top: 17px;
+  line-height: 1.8;
+}
+.card .tow-card{
+  display: flex;
+}
+@media(max-width:767px){
+  .card .tow-card{
+    flex-direction: column;
+  }
+  .card{
+    padding: 15px;
+  }
+}
+.card .tow-card .sing{
+  background-color: #2BB3B1;
+  padding: 43px 40px 40px 40px;
+  min-width: 318px;
+  color: white;
+  border-bottom-left-radius:10px ;
+}
+.card .tow-card .sing h1{
+  font-size: 22px;
+}
+.card .tow-card .sing a{
+  margin-top: 28px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--Bright-Yellow);
+  padding: 18px 90px 14px;
+  text-align: center;
+  border-radius: 6px;
+}
+.card .tow-card .sing h2{
+  margin-top: 20px;
+  font-size: 30px;
+}
+.card .tow-card .sing h2 span{
+  font-size: 16px;
+  color: var(--Light-Gray);
+  margin-left: 15px;
+}
+.card .tow-card .sing p{
+  margin-top: 15px;
+  color: var(--Light-Gray)
+}
+.card .tow-card .pargraf{
+  background-color: #4ABEBD;
+    padding: 45px 98px 40px 40px;
+    color: white;
+    border-bottom-right-radius:10px ;
+}
+card .tow-card .pargraf h1{
+  font-size: 20px;
+  font-weight: normal;
+}
+.card .tow-card .pargraf p{
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 13px;
+  color: var(--Light-Gray);
+}
